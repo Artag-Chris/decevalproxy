@@ -8,7 +8,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com</groupId>
-  <artifactId>deceval</artifactId>
+  <artifactId>deceval</artifactId> 
   <name>deceval</name>
   <version>0.0.1-SNAPSHOT</version>
   <description>Connection WSDL deceval</description>
