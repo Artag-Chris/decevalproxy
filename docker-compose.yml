@@ -1,0 +1,20 @@
+
+services:
+  springboot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - /tmp:/tmp
+    environment:
+      PATH_CLIENT_PROPERTIES: client.properties
+      PATH_LOGS: ./server.log
+    restart: unless-stopped
+    networks:
+      - springboot-network
+
+networks:
+  springboot-network:
+    driver: bridge
